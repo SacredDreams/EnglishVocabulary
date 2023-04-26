@@ -11,18 +11,53 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>九下英语词汇</string>
+   <string>九下英语词汇 - v1.0.2</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="10,1,4">
+  <property name="styleSheet">
+   <string notr="true">#Form{
+	background-color:white;
+}
+
+.QPushButton{
+	width:80;
+	height:25;
+	
+	border-style:solid;
+	border-color:purple;
+	border-width:1px;
+	border-radius:5px;
+}
+
+.QPushButton:hover{
+	color:rgba(41, 214, 168, 255);
+	border-color:rgba(255, 119, 228, 255);
+	background-color:rgba(211, 211, 211, 20);
+}
+
+.QGroupBox{
+	border-sytle:solid;
+	border-width:1px;
+	border-color:purple;
+}</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="10,1,2">
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_4">
      <item>
       <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Cambria</family>
+        </font>
+       </property>
        <property name="text">
         <string>单词</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -33,6 +68,9 @@
        </property>
        <property name="alignment">
         <set>Qt::AlignHCenter|Qt::AlignTop</set>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
        </property>
       </widget>
      </item>
@@ -128,9 +166,29 @@
          </layout>
         </item>
         <item>
+         <widget class="QCheckBox" name="checkBox">
+          <property name="text">
+           <string>隐藏英文</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="text">
+           <string>隐藏中文</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="pushButton_2">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
           <property name="text">
            <string>确定</string>
+          </property>
+          <property name="shortcut">
+           <string>Return</string>
           </property>
          </widget>
         </item>
@@ -152,8 +210,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="pushButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>下一个</string>
+       </property>
+       <property name="shortcut">
+        <string>Down</string>
        </property>
       </widget>
      </item>
