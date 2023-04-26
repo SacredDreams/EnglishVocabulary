@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\Data\Python\半成品\九下英语单词\1.0.2\main.pyw", line 126, in <module>
+    main = main()
+  File "D:\Data\Python\半成品\九下英语单词\1.0.2\main.pyw", line 21, in __init__
+    with open("data\\arguments.json", "r", encoding="utf-8") as file:
+FileNotFoundError: [Errno 2] No such file or directory: 'data\\arguments.json'
