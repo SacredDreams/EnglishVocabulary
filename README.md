@@ -8,15 +8,15 @@
 - [1.0.2 branch-1.0](https://github.com/SacredDreams/EnglishVocabulary#v102-branch-10)
 - [1.0.3](https://github.com/SacredDreams/EnglishVocabulary#v103)
 # 文件目录结构（依照最新版：v1.0.2 branch-1.0）
-> 项目\\
->     ----data\\
->         ----arguments.json
->         ----words.json
->     ----error_logs\\
->     ----ui\\
->         ----main.ui
->         ----error.ui
->     ----main.pyw
+    项目\
+        ----data\
+            ----arguments.json
+            ----words.json
+        ----error_logs\
+        ----ui\
+            ----main.ui
+            ----error.ui
+        ----main.pyw
 # v1.0.0
 - 范围：九年级下
 - 支持英文、中文字体大小更改
