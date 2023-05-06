@@ -14,6 +14,7 @@ class main:
         self.vocabulary_list_value = []
         self.arguments = {}
         self.randint = None
+        self.temp_vocabulary_list = []
         self.screen_size = QGuiApplication.primaryScreen().geometry()
         # 读取json数据文件
         with open("data\\words.json", "r", encoding="utf-8") as file:
@@ -40,15 +41,27 @@ class main:
 
     def choose_vocabulary(self):
         """随机选择单词"""
-        self.randint = random.randint(0, len(self.vocabulary_list_key))
-        if self.main_ui.checkBox.isChecked() is True:
-            self.main_ui.label.setText("")
-        else:
-            self.main_ui.label.setText(self.vocabulary_list_key[self.randint - 1])
-        if self.main_ui.checkBox_2.isChecked() is True:
-            self.main_ui.label_3.setText("")
-        else:
-            self.main_ui.label_3.setText(self.vocabulary_list_value[self.randint - 1])
+        while True:
+            if len(self.temp_vocabulary_list) == len(self.vocabulary_list_key):
+                self.temp_vocabulary_list = []
+
+            if self.main_ui.checkBox_3.isChecked() is True:
+                self.temp_vocabulary_list = []
+
+            self.randint = random.randint(0, len(self.vocabulary_list_key) - 1)
+
+            if self.randint not in self.temp_vocabulary_list:
+                if self.main_ui.checkBox.isChecked() is True:
+                    self.main_ui.label.setText("")
+                else:
+                    self.main_ui.label.setText(self.vocabulary_list_key[self.randint])
+                if self.main_ui.checkBox_2.isChecked() is True:
+                    self.main_ui.label_3.setText("")
+                else:
+                    self.main_ui.label_3.setText(self.vocabulary_list_value[self.randint])
+
+                self.temp_vocabulary_list.append(self.randint)
+                break
 
     def getArguments(self):
         """获取并修改数据"""
@@ -56,6 +69,7 @@ class main:
         self.arguments["font-size-Chinese"] = str(self.main_ui.spinBox_2.value()) + "px"
         self.arguments["checkBox"] = int(self.main_ui.checkBox.isChecked())
         self.arguments["checkBox_2"] = int(self.main_ui.checkBox_2.isChecked())
+        self.arguments["checkBox_3"] = int(self.main_ui.checkBox_3.isChecked())
         # 储存数据
         with open("data\\arguments.json", "w", encoding="utf-8") as file:
             json.dump(self.arguments, file, ensure_ascii=False)
@@ -119,6 +133,7 @@ class main:
         # 设置checkBox
         self.main_ui.checkBox.setChecked(bool(self.arguments["checkBox"]))
         self.main_ui.checkBox_2.setChecked(bool(self.arguments["checkBox_2"]))
+        self.main_ui.checkBox_3.setChecked(bool(self.arguments["checkBox_3"]))
 
 if __name__ == '__main__':
     app = QApplication()

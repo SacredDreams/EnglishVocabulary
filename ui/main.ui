@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>九下英语词汇 - v1.0.2</string>
+   <string>九下英语词汇 - v1.0.2 branch-1.0</string>
   </property>
   <property name="styleSheet">
    <string notr="true">#Form{
@@ -176,6 +176,13 @@
          <widget class="QCheckBox" name="checkBox_2">
           <property name="text">
            <string>隐藏中文</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_3">
+          <property name="text">
+           <string>重复抽取</string>
           </property>
          </widget>
         </item>
