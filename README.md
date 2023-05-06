@@ -1,12 +1,12 @@
 # EnglishVocabulary项目简介
-    - 背单词神器
-    - 内容涵盖了天津市外研版英语教材从*七年级上*至*九年级下*的所有词汇（正在制作）
+- 背单词神器
+- 内容涵盖了天津市外研版英语教材从*七年级上*至*九年级下*的所有词汇（正在制作）
 # 版本号目录直达
-    [1.0.0](https://github.com/SacredDreams/EnglishVocabulary#v100)
-    [1.0.1](https://github.com/SacredDreams/EnglishVocabulary#v101)
-    [1.0.2](https://github.com/SacredDreams/EnglishVocabulary#v102)
-    [1.0.2 branch-1.0](https://github.com/SacredDreams/EnglishVocabulary#v102-branch-10)
-    [1.0.3](https://github.com/SacredDreams/EnglishVocabulary#v103)
+- [1.0.0](https://github.com/SacredDreams/EnglishVocabulary#v100)
+- [1.0.1](https://github.com/SacredDreams/EnglishVocabulary#v101)
+- [1.0.2](https://github.com/SacredDreams/EnglishVocabulary#v102)
+- [1.0.2 branch-1.0](https://github.com/SacredDreams/EnglishVocabulary#v102-branch-10)
+- [1.0.3](https://github.com/SacredDreams/EnglishVocabulary#v103)
 # 文件目录结构（依照最新版：v1.0.2 branch-1.0）
     ----项目\
         ----data\
