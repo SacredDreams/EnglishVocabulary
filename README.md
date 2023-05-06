@@ -36,4 +36,4 @@
 # v1.0.3（正在制作）
 - 单词表涵盖**七上**至**九下**所有（中英文都有）
 - 支持编辑单词表文件
-- 添加[v1.0.2 branch-1.0版本的内容](https://github.com/SacredDreams/EnglishVocabulary/tree/1.0.2-branch-1.0 "v1.0.2 branch-1.0版本的详细内容")
+- 添加[v1.0.2 branch-1.0版本的内容](#v102-branch-10 "v1.0.2 branch-1.0版本的详细内容")
